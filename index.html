@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- explicacion: lo primero que deben incluir dentro del documento html es el head, 
+    dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras cosas -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <!-- repaso de la estructura del head -->
+  <!-- explicacion: Luego deben agregar el body -->
+  <body class="scroll">
+    <!-- explicacion: dentro del body lo primero que deben agregar es el header y la barra de navegacion -->
+    <header class="encabezado">
+      <nav class="navegacion">
+        <a class="navegacion__enlace" href="#presentacion">
+          <h2 class="navegacion__titulo">Informatorio</h2>
+        </a>
+        <ul class="enlaces">
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- repaso de la estructura del header y explicacion de los enlaces -->
+
+    <!-- explicacion: A continuacion incluiremos la etiqueta main -->
+    <main class="principal">
+      <!-- explicacion: dentro de esta etiqueta agregaremos las diferentes secciones de nuestra página -->
+
+      <!-- explicacion: Comenzaremos incluyendo una vista de presentacion -->
+      <section class="presentacion" id="presentacion">
+        <div class="presentacion__contenedor_info">
+          <h1 class="presentacion__titulo">Soy Desarrollador</h1>
+          <p class="presentacion__parrafo">
+            Soy desarrollador full stack y base de datos
+          </p>
+          <div class="presentacion__contenedor_botones">
+            <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+            <a
+              href="./assets/docs/cv.pdf"
+              target="_blank"
+              class="boton boton_oscuro"
+              role="button"
+              >Descargar CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- repaso de las partes de la seccion -->
+
+      <!-- explicacion: Ahora agregaremos una seccion donde nos explayaremos 
+        sobre nuestra historia personal, para ello escribiremos lo siguiente -->
+      <article class="articulo sobre_mi" id="sobre-mi">
+        <h2 class="articulo__titulo">Un poco sobre mi</h2>
+        <div class="articulo__contenedor_descripciones">
+          <section class="seccion_descripcion">
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen"
+                src="./assets/images/profile/trabajo2.jpg"
+                alt="foto trabajando en la oficina"
+                title="trabajando en la oficina"
+              />
+            </div>
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                Mi historia
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+                Nacido en una humilde hogar de Presidencia Roque Saenz Peña provincia Chaco de Argentina, 
+                situaciones de la vida me ha enseñado que hay un ser superior llamado Dios al control de todas las cosas y hay
+                una sola forma de superar y lograr las cosas y es aprendiendo a hacerlas. No fui, ni soy persona adinerada, 
+                pero lo poco o mucho que Dios me ha dado es para sú gloria y avanzar ya sea en conocimiento y profesionalismo. 
+                Me he dado cuenta de algo importantisimo que todo ser humano tiene, pero pocos lo saben usar y es el TIEMPO. 
+                Estoy casado y tengo 2 preciosas hijas Olivia y Hanna.       
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+               En cuanto a estudios siempre me gustaron los negocios y la tecnología, constantemente tomo cursos y me mantengo
+               actualizados en estos temas. Me he recibido del secundario con el título de Técnico en informática profesional y personal y 
+               he tomado cursos de programación en lenguaje como python y javaScript, Bases de datos, Marketing, Tienda Web con Wordprees y otros lenguales.
+              Curso de reparador de pc, Instalador de camaras de seguridad y alarma. 
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+               En cuanto a historial laboral he emprendido negocio de Lavadero de autos y Diseño Gráfico con publicidad callejera y redes sociales. 
+               Trabaje como cajero en un conocido bar "Sarava" y actualmente trabajo hace más de 8 años en una reconocida farmacia "itati II" cuya tarea que hago es:
+               atención al público, obra sociales y perfumería, recepción y acomodo de medicamentos, control de stock y vencimiento, cadete.
+
+              </p>
+              Actualmente me encuentro en la búsqueda de una mejora laboral y obtener mi primer trabajo como programador.
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+                
+              </p>
+            </div>
+          </section>
+          <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
+            pero cambiaremos el orden de los elementos dejando la imagen al final -->
+          <section class="seccion_descripcion">
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                Mis hobbies
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                Me gusta en mi tiempo libre aprender a temas relacionado a lo que me dedico. 
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                Tambien leer, estudiar, juego al voley y me apasiona la musica. 
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+              
+            </div>
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                src="./assets/images/profile/trabajo3.jpg"
+                alt="foto mientras me encontraba en una reunion de trabajo"
+                title="selfie en una reunion"
+              />
+            </div>
+          </section>
+        </div>
+      </article>
+      <!-- repaso article sobre mi y su estructura -->
+
+      <!-- explicacion: En la seccion que sigue agregaremos los proyectos en los que trabajaron,
+      no se preocupen si todavia no cuentan con ninguno, en el momento que comiencen a construirlos 
+      podran ir actualizando la informacion de esta seccion -->
+      <article class="articulo proyectos" id="proyectos">
+        <h2 class="articulo__titulo">Mis proyectos</h2>
+        <div class="contenedor_tarjetas_grid">
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/paisaje.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 1"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Blog</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_1"
+              >
+                Blog de articulos especificos con Python y django
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <!-- explicacion: pueden agregar tantas tarjetas como deseen, para ejemplificar agregaremos seis. 
+            Podemos hacerlo simplemente copiando y pegando. Yo en mi caso en algunas tarjetas agregare un pequeño cambio a los botones  -->
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/juegos.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 2"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Tienda Virtual</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_2"
+              >
+                Creación de una tienda Virtual con Python y django, con carrito de compras,
+                menú de navegación, contactos con bootstrap.
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/calendario.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 3"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">Biblioteca</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_3"
+              >
+                Biblioteca Virtual con Python flask con una propia seccion de Administración.
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/ahorcado.png"
+              alt="imagen del proyecto"
+              title="proyecto 4"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">Juego del Ahorcado</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_4"
+              >
+                Con lenguaje python. 
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          
+        </div>
+      </article>
+      <!-- repaso del articulo proyectos -->
+    </main>
+    <!-- repaso de todo lo incluido en la etiqueta main -->
+
+    <!-- Por ultimo deben agregar la etiqueta footer. 
+      En esta aparecera nuestra informacion de contacto y 
+      también inluiremos enlaces de navegacion y derechos. -->
+    <footer class="pie_de_pagina" role="contentinfo">
+      <!-- explicacion: la primer columna sera para nuestras redes,
+        cabe aclarar que la estructura sera similar en todos los casos y solo habrá pequeños cambios -->
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+        <ul class="enlaces enlaces_redes">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://github.com/juan05bocek"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/github-logo.png"
+                alt="logo de github"
+                title="github"
+            /></a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.instagram.com"
+              target="_blank"
+            >
+              <img
+                class="enlaces__icono"
+                src="./assets/images/logos/ig-logo.png"
+                alt="logo de instagram"
+                title="instagram"
+              />
+            </a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://twitter.com/1394Alves"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/x-logo.png"
+                alt="logo de X"
+                title="X"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- explicacion: la segunda columna sera para nuestros medios de contacto  -->
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="juanbocekchaco_argentina@hotmail.com"
+              target="_blank"
+              >Mail: juanbocekchaco_argentina@hotmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- explicacion: la ultima columna sera para los enlaces de navegacion -->
+      <div class="pie_de_pagina__columna" role="navigation">
+        <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="#presentacion"
+              >Inicio</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+              >Sobre mi</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+              >Proyectos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- por ultimo los derechos de la pagina -->
+      <div class="pie_de_pagina__copyright">
+        <p>©️Copyright 2024</p>
+      </div>
+    </footer>
+    <!-- repaso de los elementos en el footer -->
+  </body>
+</html>
